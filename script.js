@@ -4,22 +4,22 @@ tl.from("#navbar", {
   duration: 1,
   y: -100,
   opacity: 0,
-  ease: "power2.out"
+  ease: "power2.out",
 });
 
-tl.from("#move .move", {
+tl.from("#move p", {
   duration: 1,
   x: 100,
   opacity: 0,
   ease: "power2.out",
-  stagger: 0.2
+  stagger: 0.2,
 });
 
 gsap.from("#me", {
   duration: 1,
   x: -100,
   opacity: 0,
-  ease: "power2.out"
+  ease: "power2.out",
 });
 
 tl.from("#work", {
@@ -27,5 +27,5 @@ tl.from("#work", {
   opacity: 0,
   scale: 0.5,
   ease: "power2.out",
-  stagger: 0.2
+  stagger: 0.2,
 });
