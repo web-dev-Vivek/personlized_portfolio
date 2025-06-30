@@ -21,11 +21,3 @@ gsap.from("#me", {
   opacity: 0,
   ease: "power2.out",
 });
-
-tl.from("#work", {
-  duration: 0.8,
-  opacity: 0,
-  scale: 0.5,
-  ease: "power2.out",
-  stagger: 0.2,
-});
