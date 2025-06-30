@@ -20,6 +20,9 @@
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manufacturing+Consent&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Limelight&family=Manufacturing+Consent&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
@@ -29,6 +32,9 @@
             roboto: ["Roboto", "sans-serif"],
             oswald: ["Oswald", "sans-serif"],
             bebas: ['"Bebas Neue"', "cursive"],
+            dancing: ['"Dancing Script"', "cursive"],
+            limelight: ['"Limelight"', "cursive"],
+            manufacturing: ['"Manufacturing Consent"', "cursive"],
           },
         },
       },
@@ -105,26 +111,44 @@
   id="projects"
   class="w-screen border-b border-white/30 min-h-screen"
 >
-  <div class="flex justify-center">
-    <h1 class="text-5xl font-bebas mt-5">PROJECTS</h1>
+  <div id="Title" class="flex justify-center items-center">
+    <h1 class="text-5xl tracking-tighter font-bebas mt-5">
+      <span>P</span>
+      <span>R</span>
+      <span>O</span>
+      <span>J</span>
+      <span>E</span>
+      <span>C</span>
+      <span>T</span>
+      <span>S</span>
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+    </h1>
   </div>
 
-  <div class="flex flex-wrap justify-center items-start gap-8 transform:translate  mt-8 p-4">
-    <div class="w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+  <div id="project_image" class="flex flex-wrap justify-center items-start gap-8 transform:translate  mt-8 p-4">
+    <div class="up font-limelight w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="sundown.png" alt="Sundown" class="w-full h-48 object-contain" />
-      <div class="text-center p-2 font-semibold text-white">Sundown</div>
+      <a href="https://web-dev-vivek.github.io/Sundown/GSAP.html" id="text" class="text-center flex justify-center cursor-pointer  font-semibold text-white">Sundown</a>
     </div>
-    <div class=" transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+    <div class="up font-limelight  transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="theartisticwing.png" alt="Artistic Wing" class="w-full  h-48 object-contain" />
-      <div class="text-center p-2 font-semibold text-white">The Artistic Wing</div>
+      <a href=" https://theartisticwing.vercel.app/" id="text" class="text-center flex justify-center cursor-pointer text-3xl p-5 font-semibold text-white">The Artistic Wing</a>
     </div>
-    <div class="w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+    <div class="up font-limelight w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="netflix.png" alt="Netflix Clone" class="w-full  h-48 object-contain" />
-      <div class="text-center p-2 font-semibold text-white">Netflix Clone</div>
+      <a href="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html" id="text" class="text-center flex justify-center cursor-pointer font-semibold text-white">Netflix Clone</a>
     </div>
-
   </div>
+
+        <div class="w-screen h-screen bg-red-600 flex justify-center items-center">
+      <div class="w-72 h-72 bg-green-500"><img src="" alt=""></div>
+      <div></div>
+    </div>
 </div>
+
+
 
 
     <script
@@ -133,6 +157,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
