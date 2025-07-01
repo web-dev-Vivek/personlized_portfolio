@@ -24,6 +24,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Limelight&family=Manufacturing+Consent&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Limelight&family=Manufacturing+Consent&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -35,6 +38,8 @@
             dancing: ['"Dancing Script"', "cursive"],
             limelight: ['"Limelight"', "cursive"],
             manufacturing: ['"Manufacturing Consent"', "cursive"],
+            playfair: ['"Playfair Display"', "serif"],
+
           },
         },
       },
@@ -42,7 +47,7 @@
   </script>
   <body class="bg-black text-white">
     <div class="min-h-screen">
-      <div id="Home" class="border-b-[1px] border-white-300 pb-24">
+      <div id="Home" class="">
         <nav id="navbar" class="flex justify-between p-4 items-center mb-8">
           <div id="name" class="text-2xl font-bold font-oswald">Vivek</div>
           <div
@@ -90,21 +95,27 @@
               presence. Let your digital identity shine—clear, bold, and
               unforgettable. .
             </p>
-            <div id="work" class="flex gap-4">
+            <div id="work" class="flex mt-5 gap-4">
               <a id="work1"
                 href="#projects"
-                class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition"
+                class="bg-white text-black px-5 py-2 rounded hover:bg-gray-300 transition"
                 >See My Work</a
               >
               <a id="work2"
                 href="Vivek-Resume.pdf"
                 download
-                class="border border-blue-600 text-blue-500 px-5 py-2 rounded hover:bg-blue-600 hover:text-white transition"
+                class="border border-white text-white px-5 py-2 rounded hover:bg-white hover:text-black transition"
                 >My Dev Journey</a
               >
             </div>
           </div>
         </div>
+        <div id="String">
+          <svg class="pl-10" width="95vw" height="26vh" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2vw 8vh Q 47vw 8vh 93vw 8vh" stroke="white" fill="transparent" />
+</svg>
+        </div>
+
       </div>
 
       <div
@@ -141,10 +152,23 @@
       <a href="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html" id="text" class="text-center flex justify-center cursor-pointer font-semibold text-white">Netflix Clone</a>
     </div>
   </div>
+  <div id="String1" class="">
+          <svg class="pl-10" width="95vw" height="25vh" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2vw 8vh Q 47vw 8vh 93vw 8vh" stroke="white" fill="transparent" />
+</svg></div>
 
-        <div class="w-screen h-screen bg-red-600 flex justify-center items-center">
+         <h1 class="flex justify-center text-4xl font-playfair">Working on....</h1>
+        <div class="w-screen h-full p-10 flex justify-between items-center">
       <div class="w-72 h-72 bg-green-500"><img src="" alt=""></div>
-      <div></div>
+      <div>
+        <div><b>Name:</b> Vivek's Portfolio</div>
+        <div><b>Theme:</b> Dark + Developer Vibe + Neon Accent</div>
+        <div><b>Tech Used:</b> React + Tailwind + GSAP</div>
+        <div><b>Pages:</b> Home, Projects, Team, Contact</div>
+        <div><b>Functionalities:</b> Smooth scroll, animations, responsive layout, contact button, downloadable resume</div>
+        <div><b>Hosting:</b> GitHub Pages</div>
+        <div><b>Extras:</b> Font families configured, custom scroll animations, unique project section with hover effects</div>
+      </div>
     </div>
 </div>
 
