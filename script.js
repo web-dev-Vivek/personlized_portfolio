@@ -116,3 +116,34 @@ string1.addEventListener("mouseleave", function () {
     ease: "elastic.out(1, 0.05)",
   });
 });
+
+gsap.from("#working .summary ", {
+  scrollTrigger: {
+    trigger: "#working",
+    start: "top 85%",
+    end: "top 10%",
+    // scrub: 3,
+    markers: true, // adjust if too late/early
+  },
+  duration: 1,
+  scale: 2,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.2,
+});
+
+gsap.from("#working div span", {
+  scrollTrigger: {
+    trigger: "#working",
+    start: "top 100%",
+    end: "top 60%",
+    markers: true,
+    scrub: 2,
+    // adjust if too late/early
+  },
+  duration: 1,
+  scale: 0,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.2,
+});
