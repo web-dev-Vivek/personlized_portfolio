@@ -47,8 +47,8 @@
   </script>
   <body class="bg-black text-white">
     <div id="main" class="  min-h-screen">
-      <div id="cursor" class="w-[20px] z-[100] h-[20px] bg-white absolute  rounded-full"></div>
-      <div id="Home" class="">
+      <div id="cursor" class="w-[40px] z-[9] h-[40px] bg-white absolute  rounded-full"><img src="cursor1.png" alt=""></div>
+      <div id="Home" class=" relative">
         <nav id="navbar" class="flex justify-between p-4 items-center mb-8">
           <div id="name" class="text-2xl font-bold font-oswald">Vivek</div>
           <div
@@ -79,7 +79,7 @@
             alt="Vivek's Photo"
             class="w-full md:w-1/3 rounded-xl shadow-lg"
           />
-          <div id="move" class="w-full md:w-2/3">
+          <div id="move" class="w-full  md:w-2/3">
             <p class="move" class="text-8xl font-bold mb-4">
               Hey, I'm Vivek 👋
             </p>
@@ -99,25 +99,26 @@
             <div id="work" class="flex mt-5 gap-4">
               <a id="work1"
                 href="#projects"
-                class="bg-white text-black px-5 py-2 rounded hover:bg-gray-300 transition"
+                class="bg-white z-[10] text-black px-5 py-2 rounded hover:bg-gray-300 transition"
                 >See My Work</a
               >
               <a id="work2"
                 href="Vivek-Resume.pdf"
                 download
-                class="border border-white text-white px-5 py-2 rounded hover:bg-white hover:text-black transition"
+                class="border border-white z-[10] text-white px-5 py-2 rounded hover:bg-white hover:text-black transition"
                 >My Dev Journey</a
               >
             </div>
           </div>
         </div>
-        <div id="String">
-          <svg class="pl-10" width="95vw" height="26vh" xmlns="http://www.w3.org/2000/svg">
+
+
+      </div>
+      <div id="String" class="z-[99]">
+          <svg class="pl-10 z-[99] " width="95vw" height="26vh" xmlns="http://www.w3.org/2000/svg">
   <path d="M 2vw 8vh Q 47vw 8vh 93vw 8vh" stroke="white" fill="transparent" />
 </svg>
         </div>
-
-      </div>
 
       <div
   id="projects"
@@ -139,16 +140,16 @@
     </h1>
   </div>
 
-  <div id="project_image" class="flex flex-wrap justify-center items-start gap-8 transform:translate  mt-8 p-4">
-    <div class="up font-limelight w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+  <div id="project_image" class="flex z-[10] flex-wrap justify-center items-start gap-8 transform:translate  mt-8 p-4">
+    <div class="up font-limelight z-[10] w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="sundown.png" alt="Sundown" class="w-full h-48 object-contain" />
       <a href="https://web-dev-vivek.github.io/Sundown/GSAP.html" id="text" class="text-center flex justify-center cursor-pointer  font-semibold text-white">Sundown</a>
     </div>
-    <div class="up font-limelight  transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+    <div class="up font-limelight z-[10] transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="theartisticwing.png" alt="Artistic Wing" class="w-full  h-48 object-contain" />
       <a href=" https://theartisticwing.vercel.app/" id="text" class="text-center flex justify-center cursor-pointer text-3xl p-5 font-semibold text-white">The Artistic Wing</a>
     </div>
-    <div class="up font-limelight w-72 transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
+    <div class="up font-limelight w-72 z-[10] transform translate-y-2 hover:scale-110 transition duration-300 overflow-hidden shadow-lg">
       <img src="netflix.png" alt="Netflix Clone" class="w-full  h-48 object-contain" />
       <a href="https://web-dev-vivek.github.io/Netflix_clone/netflix1.html" id="text" class="text-center flex justify-center cursor-pointer font-semibold text-white">Netflix Clone</a>
     </div>
