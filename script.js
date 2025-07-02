@@ -200,3 +200,26 @@ string2.addEventListener("mouseleave", function () {
     ease: "elastic.out(1, 0.05)",
   });
 });
+
+const initialPath3 = "M 10 80 Q 600 80 1300 80";
+const string3 = document.querySelector("#String3");
+
+string3.addEventListener("mousemove", function (e) {
+  const bounds = string3.getBoundingClientRect();
+  const x = e.clientX - bounds.left;
+  const y = e.clientY - bounds.top;
+
+  gsap.to("#String3 svg path", {
+    duration: 1.5,
+    attr: { d: `M 10 80 Q ${x} ${y} 1300 80` },
+    ease: "elastic.out(1, 0.2)",
+  });
+});
+
+string3.addEventListener("mouseleave", function () {
+  gsap.to("#String3 svg path", {
+    duration: 1.5,
+    attr: { d: initialPath3 },
+    ease: "elastic.out(1, 0.05)",
+  });
+});
