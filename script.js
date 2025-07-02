@@ -223,3 +223,13 @@ string3.addEventListener("mouseleave", function () {
     ease: "elastic.out(1, 0.05)",
   });
 });
+var main = document.getElementById("main");
+
+main.addEventListener("mousemove", (e) => {
+  gsap.to("#cursor", {
+    duration: 0.5,
+    x: e.pageX - 10,
+    y: e.pageY - 10,
+    ease: "power2.out",
+  });
+});
