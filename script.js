@@ -120,10 +120,10 @@ string1.addEventListener("mouseleave", function () {
 gsap.from("#working .summary ", {
   scrollTrigger: {
     trigger: "#working",
-    start: "top 85%",
-    end: "top 10%",
-    // scrub: 3,
-    markers: true, // adjust if too late/early
+    start: "top 80%",
+    end: "top 40%",
+    scrub: 2,
+    markers: true,
   },
   duration: 1,
   scale: 2,
@@ -135,9 +135,9 @@ gsap.from("#working .summary ", {
 gsap.from("#working div span", {
   scrollTrigger: {
     trigger: "#working",
-    start: "top 100%",
+    start: "top 80%",
     end: "top 60%",
-    markers: true,
+
     scrub: 2,
     // adjust if too late/early
   },
@@ -146,4 +146,57 @@ gsap.from("#working div span", {
   opacity: 0,
   ease: "power2.out",
   stagger: 0.2,
+});
+
+gsap.from("#working_img img", {
+  scrollTrigger: {
+    trigger: "#working_img",
+    start: "top 80%",
+    end: "top 10%",
+    scrub: 2,
+    // adjust if too late/early
+  },
+  duration: 1,
+  x: -100,
+  scale: 0,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.2,
+});
+
+gsap.from("#working_title", {
+  scrollTrigger: {
+    trigger: "#working_title",
+    start: "top 80%",
+    end: "top 10%",
+    scrub: 2,
+    markers: false,
+  },
+  duration: 1,
+  y: -100,
+  opacity: 0,
+  ease: "power2.out",
+});
+
+const initialPath2 = "M 10 80 Q 600 80 1300 80";
+const string2 = document.querySelector("#String2");
+
+string2.addEventListener("mousemove", function (e) {
+  const bounds = string2.getBoundingClientRect();
+  const x = e.clientX - bounds.left;
+  const y = e.clientY - bounds.top;
+
+  gsap.to("#String2 svg path", {
+    duration: 1.5,
+    attr: { d: `M 10 80 Q ${x} ${y} 1300 80` },
+    ease: "elastic.out(1, 0.2)",
+  });
+});
+
+string2.addEventListener("mouseleave", function () {
+  gsap.to("#String2 svg path", {
+    duration: 1.5,
+    attr: { d: initialPath2 },
+    ease: "elastic.out(1, 0.05)",
+  });
 });
