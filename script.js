@@ -223,13 +223,33 @@ string3.addEventListener("mouseleave", function () {
     ease: "elastic.out(1, 0.05)",
   });
 });
-var main = document.getElementById("main");
 
-main.addEventListener("mousemove", (e) => {
-  gsap.to("#cursor", {
-    duration: 0.5,
-    x: e.pageX - 10,
-    y: e.pageY - 10,
-    ease: "power2.out",
-  });
+gsap.from("#teamContainer div", {
+  scrollTrigger: {
+    trigger: "#teamContainer",
+    start: "top 70%",
+    end: "top 10%",
+    scrub: 2,
+    markers: false,
+  },
+  duration: 1,
+  x: 100,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.2,
+});
+
+gsap.from("#TEAM span", {
+  scrollTrigger: {
+    trigger: "#TEAM",
+    start: "top 90%",
+    end: "top 60%",
+    scrub: 2,
+    markers: true,
+  },
+  duration: 1,
+  x: 100,
+  opacity: 0,
+  ease: "power2.out",
+  stagger: 0.6, // ✅ Correct property
 });
