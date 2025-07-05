@@ -226,10 +226,9 @@ string3.addEventListener("mouseleave", function () {
 gsap.from("#teamContainer div", {
   scrollTrigger: {
     trigger: "#teamContainer",
-    start: "top 70%",
+    start: "top 100%",
     end: "top 10%",
     scrub: 2,
-    markers: false,
   },
   duration: 1,
   x: 100,
@@ -241,9 +240,10 @@ gsap.from("#teamContainer div", {
 gsap.from("#TEAM span", {
   scrollTrigger: {
     trigger: "#TEAM",
-    start: "top 90%",
-    end: "top 60%",
+    start: "top 50%",
+    end: "top 10%",
     scrub: 2,
+    markers: false,
   },
   duration: 1,
   x: 100,
