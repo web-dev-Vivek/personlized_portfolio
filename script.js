@@ -237,9 +237,9 @@ gsap.from("#teamContainer div", {
   stagger: 0.2,
 });
 
-gsap.from("#TEAM span", {
+gsap.from("#team span", {
   scrollTrigger: {
-    trigger: "#TEAM",
+    trigger: "#team",
     start: "top 50%",
     end: "top 10%",
     scrub: 2,
@@ -250,4 +250,65 @@ gsap.from("#TEAM span", {
   opacity: 0,
   ease: "power2.out",
   stagger: 0.6, // ✅ Correct property
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Heading animation (from bottom with stagger)
+gsap.from("#contact-heading span", {
+  scrollTrigger: {
+    trigger: "#contact-heading",
+    start: "top 90%",
+    end: "top 40%",
+    scrub: 2,
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power2.out",
+});
+
+// Paragraph animation (fade + slight up)
+gsap.from("#contact p", {
+  scrollTrigger: {
+    trigger: "#contact p",
+    start: "top 90%",
+    end: "top 50%",
+    scrub: 2,
+  },
+  y: 40,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  stagger: 0.2,
+});
+
+// Contact image zoom + fade in
+gsap.from("#contact img", {
+  scrollTrigger: {
+    trigger: "#contact img",
+    start: "top 95%",
+    end: "top 60%",
+    scrub: 2,
+  },
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
+// Social media cards animation with stagger
+gsap.from("#contact .bg-white\\/10", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 70%",
+    end: "top 20%",
+    scrub: 2,
+  },
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  stagger: 0.3,
 });
